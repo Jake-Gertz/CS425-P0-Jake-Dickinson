@@ -10,5 +10,8 @@
  */
 char* get_greeting(const char* restrict name);
 
+float product_calculation(float numberOne, float numberTwo);
+
+float get_incorrect_sum(float numberOne, float numberTwo);
 
 #endif // LAB_H

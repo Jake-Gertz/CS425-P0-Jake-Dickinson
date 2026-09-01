@@ -32,3 +32,23 @@ char *get_greeting(const char *restrict name)
 
   return greeting;
 }
+
+float product_calculation(float numberOne, float numberTwo){
+  float retVal = numberOne * numberTwo;
+
+  return retVal;
+}
+
+float get_incorrect_sum(float numberOne, float numberTwo){
+  float retVal = 0;
+  int ranNum = (rand() % 100) + 1;
+  int randFlag = (rand() % 2);
+
+  if (randFlag == 0) {
+    retVal = numberOne + numberTwo + (float)ranNum;
+  } else {
+    retVal = numberOne + numberTwo - (float)ranNum;
+  }
+
+  return retVal;
+}
