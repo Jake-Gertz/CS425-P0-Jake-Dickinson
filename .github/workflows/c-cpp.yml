@@ -19,6 +19,3 @@ jobs:
       
     - name: make check
       run: make check
-  
-    - name: make report
-      run: make report
